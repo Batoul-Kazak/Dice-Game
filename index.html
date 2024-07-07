@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div>
+    <main>
+        <section id="player-1-section" class="player-turn">
+            <h2>PLAYER 1</h2>
+            <div id="player1-result">0</div>
+            <div class="current-score-container">CURRENT <br>
+            <span id="player1-score">0</span></div>
+        </section>
+        <section id="control-section">
+            <button id="new-game">🔄 new game</button>
+            <div id="dice-img"></div>
+            <div id="buttons-container">
+                <button id="role-dice">💫 role dice</button>
+                <button id="hold">😎 hold</button>
+            </div>
+        </section>
+        <section id="player-2-section" class="not-my-turn">
+            <h2>PLAYER 2</h2>
+            <div id="player2-result">0</div>
+            <div class="current-score-container">CURRENT <br>
+            <span id="player2-score">0</span></div>
+        </section>
+    </main>
+
+    <div id="pop-up-window" class="hidden">
+        <p>Are you sure you want to begin a new game?</p>
+        <div>
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
